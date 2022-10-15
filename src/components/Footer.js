@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="py-16 bg-veryDarkViolet">
       <div className="container max-w-6xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         <img src={logo} className="invert" alt="logo shortly" />
-        <div className="flex flex-col space-y-16 md:space-x-20 md:flex-row md:space-y-0">
+        <div className="flex flex-col space-y-16 md:space-x-24 md:flex-row md:space-y-0">
           <div className="flex flex-col items-center w-full md:items-start">
             <div className="mb-5 font-bold text-white capitalize">Features</div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
