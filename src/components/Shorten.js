@@ -1,8 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 export default function Shortly() {
   const [url, setUrl] = useState("");
   const [links, setLinks] = useState([]);
+  const [copied, setCopied] = useState("Copy");
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -22,7 +23,11 @@ export default function Shortly() {
     }
   };
 
-  // https://api.shrtco.de/v2/shorten?url=
+  const handleCopy = () => {
+    navigator.clipboard.writeText(links.short_link);
+    setCopied("Copied!");
+  };
+
   return (
     <section className="relative bg-gray-100">
       <div className="max-w-6xl mx-auto p-6 space-y-6">
@@ -51,30 +56,11 @@ export default function Shortly() {
           </p>
           <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
             <div className="font-bold text-cyanish">{links.short_link}</div>
-            <button className="p-2 px-8 text-white bg-cyanish rounded-lg hover:opacity-70 focus:outline-none active:bg-darkViolet">
-              Copy
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-          <p className="font-bold text-center text-veryDarkViolet md:text-left">
-            https://twitter.com/frontendmentor
-          </p>
-          <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-            <div className="font-bold text-cyanish">https://rel.ink/gxOXp9</div>
-            <button className="p-2 px-8 text-white bg-cyanish rounded-lg hover:opacity-70 focus:outline-none active:bg-darkViolet">
-              Copy
-            </button>
-          </div>
-        </div>
-        <div className="flex flex-col items-center justify-between w-full p-6 bg-white rounded-lg md:flex-row">
-          <p className="font-bold text-center text-veryDarkViolet md:text-left">
-            https://linkedin.com/frontend-mentor
-          </p>
-          <div className="flex flex-col items-center justify-end flex-1 space-x-4 space-y-2 md:flex-row md:space-y-0">
-            <div className="font-bold text-cyanish">https://rel.ink/gob3X9</div>
-            <button className="p-2 px-8 text-white bg-cyanish rounded-lg hover:opacity-70 focus:outline-none active:bg-darkViolet">
-              Copy
+            <button
+              className="p-2 px-8 text-white bg-cyanish rounded-lg hover:opacity-70 focus:outline-none active:bg-darkViolet"
+              onClick={handleCopy}
+            >
+              {copied}
             </button>
           </div>
         </div>

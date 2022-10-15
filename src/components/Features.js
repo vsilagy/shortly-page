@@ -4,6 +4,17 @@ import img3 from "../images/icon-fully-customizable.svg";
 export default function Features() {
   return (
     <section className="pb-32 bg-gray-100">
+      <article className="py-24">
+        <div className="container mx-auto px-3 max-w-6xl">
+          <h2 className="text-5xl mb-6 font-bold text-center">
+            Advanced Statistics
+          </h2>
+          <p className="max-w-xs mx-auto text-center text-grayish md:max-w-md">
+            Track how your links are performing across the web with our advanced
+            statistics dashboard.
+          </p>
+        </div>
+      </article>
       <div className="relative container max-w-6xl flex flex-col items-start px-6 mx-auto md:flex-row md:space-x-7">
         <div className="relative flex flex-col p-6 space-y-6 bg-white rounded-lg md:w-1/3">
           <div className="absolute -ml-10 left-1/2 -top-10 md-left-16">
