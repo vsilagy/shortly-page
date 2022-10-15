@@ -8,8 +8,21 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 ul,
 li {
   list-style-type: none;
+}
+#form {
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-repeat: none;
+  background-size: cover;
+}
+
+#cta {
+  background-image: url(./images/bg-boost-desktop.svg);
+  background-repeat: none;
+  background-size: cover;
 }
