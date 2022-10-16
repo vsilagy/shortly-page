@@ -1,7 +1,7 @@
 import Header from "./components/Header";
 import Hero from "./components/Hero";
+import Main from "./components/Main";
 import Features from "./components/Features";
-import Shorten from "./components/Shorten";
 import Boost from "./components/Boost";
 import Footer from "./components/Footer";
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Header />
       <Hero />
-      <Shorten />
+      <Main />
       <Features />
       <Boost />
       <Footer />

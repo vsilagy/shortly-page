@@ -2,28 +2,28 @@ import logo from "../images/logo.svg";
 
 export default function Footer() {
   return (
-    <footer className="py-16 bg-veryDarkViolet">
+    <footer className="py-16 px-4 bg-veryDarkViolet">
       <div className="container max-w-6xl flex flex-col items-center justify-between mx-auto space-y-16 md:flex-row md:space-y-0 md:items-start">
         <img src={logo} className="invert" alt="logo shortly" />
-        <div className="flex flex-col space-y-16 md:space-x-24 md:flex-row md:space-y-0">
+        <div className="flex flex-col space-y-16 text-sm md:space-x-16 md:flex-row md:space-y-0 lg:space-x-24 lg:text-base">
           <div className="flex flex-col items-center w-full md:items-start">
             <div className="mb-5 font-bold text-white capitalize">Features</div>
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-main"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Link shortening
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-main"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Branded links
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-main"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Analytics
               </a>
@@ -37,19 +37,19 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Blog
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Developers
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Support
               </a>
@@ -61,31 +61,31 @@ export default function Footer() {
             <div className="flex flex-col items-center space-y-3 md:items-start">
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 About
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Our Team
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Careers
               </a>
               <a
                 href="#"
-                className="capitalize text-grayishViolet hover:text-cyan"
+                className="capitalize text-grayishViolet hover:text-cyanish"
               >
                 Contact
               </a>
             </div>
           </div>
-          <div className="flex justify-center items-start gap-4">
+          <div className="flex justify-center items-start space-x-4">
             <a href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24">
                 <path

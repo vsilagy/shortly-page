@@ -11,7 +11,7 @@ export default function Header() {
       <header className="relative container max-w-6xl mx-auto p-6">
         <div className="flex items-center justify-between">
           <img src={logo} alt="logo shortly" />
-          <nav className="hidden space-x-8 font-bold lg:flex">
+          <nav className="hidden space-x-8 font-bold md:flex">
             <a
               href="#"
               className="text-grayishViolet hover:text-veryDarkViolet"
@@ -33,7 +33,7 @@ export default function Header() {
           </nav>
 
           {open && (
-            <nav className="absolute p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100 lg:hidden">
+            <nav className="absolute p-6 rounded-lg bg-darkViolet left-6 right-6 top-20 z-100 md:hidden">
               <div className="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">
                 <a
                   href="#"
@@ -65,7 +65,7 @@ export default function Header() {
               </div>
             </nav>
           )}
-          <div className="hidden items-center space-x-6 font-bold text-grayishViolet lg:flex">
+          <div className="hidden items-center space-x-6 font-bold text-grayishViolet md:flex">
             <a href="#" className="hover:text-veryDarkViolet">
               Login
             </a>
@@ -78,7 +78,7 @@ export default function Header() {
           </div>
           <button
             onClick={() => setOpen(!open)}
-            className="lg:hidden focus:outline-none"
+            className="md:hidden focus:outline-none"
           >
             <img src={open ? close : hamburger} />
           </button>

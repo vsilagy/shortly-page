@@ -25,3 +25,11 @@ li {
   background-repeat: none;
   background-size: cover;
 }
+@media (max-width: 768px) {
+  #form {
+    background-image: url(./images/bg-shorten-mobile.svg);
+  }
+  #cta {
+    background-image: url(./images/bg-boost-mobile.svg);
+  }
+}
