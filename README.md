@@ -1,7 +1,8 @@
 # Shortly Page
 
 A URL shortening API landing page
-[Live Preview](https://vsilagy.github.io/shortly-page/
+
+[Live Preview](https://vsilagy.github.io/shortly-page/)
 
 ## Built with:
 
